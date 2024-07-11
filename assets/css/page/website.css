@@ -1,0 +1,85 @@
+/*
+SP 〜519px
+tab 520px 〜 959px
+PC 960px 〜 
+*/
+
+/*=====================
+共通
+=====================*/
+.f_bold {
+    font-size: bold;
+}
+
+.site_about_box {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 0 16px;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.site_about {
+    margin-bottom: 8px;
+}
+
+.tool {
+    margin-bottom: 16px;
+}
+
+.pc_design {
+    width: 150px;
+}
+
+.sp_design {
+    width: 36px;
+}
+
+.website_title {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.design_box {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.design_box h4 {
+    text-align: center;
+}
+
+.website_url_cover {
+    margin-bottom: 8px;
+}
+
+/*=====================
+タブ切り替え
+=====================*/
+#sf_tab:checked~#sf_content,
+#nyancafe_tab:checked~#nyancafe_content {
+    display: block;
+}
+
+/*=====================
+Sunday flower
+=====================*/
+.sf_color {
+    color: #fda826;
+}
+
+/*=====================
+NYAN Cafe
+=====================*/
+.nyan_color {
+    color: #ff919e;
+}

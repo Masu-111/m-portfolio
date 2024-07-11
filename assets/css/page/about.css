@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/*
+SP 〜519px
+tab 520px 〜 959px
+PC 960px 〜 
+*/
+
+main {
+    margin: 0;
+    margin-top: 40px;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+}
+
+.about_me {
+    margin-bottom: 40px;
+}
+
+.about_me_inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 0 16px;
+}
+
+.about_inner {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin-bottom: 40px;
+}
+
+.name_kana {
+    font-size: 16px;
+}
+
+@media screen and (min-width:960px) {
+    .about_me_inner {
+        font-size: 16px;
+    }
+
+    main {
+        margin-top: 80px;
+    }
+
+    .about_me {
+        margin-bottom: 80px;
+    }
+}
+
+/*===min-width:960px===*/
+
+/*========
+Works
+=========*/
+
+.works{
+    padding-right: 16px;
+    padding-left: 16px;
+    text-align: center;
+}
+
+.works .name {
+    font-size: 30px;
+}
+
+.works_img_cover img {
+    display: block;
+    width: 100%;
+}
+
+.works_img_cover {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.design_cap{
+    margin-top: 20px;
+}
+
+.works_box figcaption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cap_title {
+    display: inline;
+}
+
+.works_box figcaption span {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.works_text {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.works_text.under_80{
+    margin-bottom: 80px;
+}
+
+@media screen and (min-width:650px) {
+    .works_inner {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .works_text {
+        font-size: 16px;
+    }
+
+    .cord_img_cover{
+        margin-bottom: 20px;
+    }
+}
+/* ===min-width:520px=== */
+
+/*シャッフルテキスト*/
+.sh_text {
+    opacity: 0;
+}
+
+.sh_text.is_show {
+    opacity: 1;
+}

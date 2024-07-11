@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/*
+SP 〜519px
+tab 520px 〜 959px
+PC 960px 〜 
+*/
+
+/*=====================
+main
+=====================*/
+
+.tab_contents {
+    margin-top: 80px;
+}
+
+.tab_contents h2 {
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+.tab_contents h2 .smallfont {
+    font-size: 16px;
+}
+
+.tab_contents div h3 {
+    margin-bottom: 8px;
+    color: #3f3f3f;
+}
+
+.border {
+    border-bottom: 1px solid #ddd;
+}
+
+.inner {
+    max-width: 1000px;
+}
+
+/*===min-width:960px===*/
+
+/*=====================
+横
+=====================*/
+.row {
+    display: flex;
+    padding: 40px 0;
+}
+
+.bnr_title {
+    text-align: center;
+    overflow: hidden;
+    color: #3f3f3f;
+    font-size: 30px;
+}
+
+.bnr_title .bottom_up {
+    display: block;
+    opacity: 0;
+    font-size: 30px;
+}
+
+
+.bnr_title.on .bottom_up {
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#more_content .bnr_title {
+    margin-bottom: 30px;
+}
+
+.row div {
+    width: calc(100%/2);
+}
+
+.more {
+    font-size: 15px;
+}
+
+.row div h3 {
+    text-align: center;
+}
+
+.row div img {
+    margin: 0 auto;
+}
+
+@media screen and (min-width:960px) {
+
+    #more_content .bnr_title {
+        margin-bottom: 60px;
+    }
+
+    .bnr_title .bottom_up {
+        font-size: 40px;
+    }
+}
+
+/*=====================
+縦
+=====================*/
+
+.col {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.col img {
+    margin: 0 auto;
+}
+
+.col div:first-child {
+    margin-bottom: 50px;
+}
+
+/*=====================
+col レスポンシブ
+=====================*/
+
+@media screen and (min-width:960px) {
+    .androw {
+        display: flex;
+        justify-content: space-around;
+        gap: 100px;
+    }
+}
+
+/*===max-width:960px===*/
+
+@media screen and (max-width:959px) {
+
+    .andcol {
+        flex-flow: column;
+    }
+
+    .andcol div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .andcol div:first-child {
+        margin-bottom: 50px;
+    }
+}
+
+/*===min-width:px===*/
+
+/*=====================
+バナー横幅
+=====================*/
+
+.w_50p {
+    width: 80%;
+    max-width: 500px;
+}
+
+.w_100 {
+    width: 100px;
+}
+
+.w_160 {
+    width: 100%;
+    max-width: 160px;
+}
+
+.w_234 {
+    width: 100%;
+    max-width: 234px;
+}
+
+.w_300 {
+    width: 100%;
+    max-width: 300px;
+}
+
+.w_350 {
+    width: 100%;
+    max-width: 350px;
+}
+
+.w_728 {
+    width: 100%;
+    max-width: 728px;
+}
+
+@media screen and (min-width:960px) {
+    #shaka_content .w_50p {
+        width: 100%;
+    }
+}
+
+/*===min-width:960px===*/
+
+/*=====================
+タブ切り替え
+=====================*/
+label span {
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+}
+
+.tab_contents {
+    display: none;
+}
+
+#bijoude_tab:checked~#bijoude_content,
+#iqserver_tab:checked~#iqserver_content,
+#shaka_tab:checked~#shaka_content,
+#idiy_tab:checked~#idiy_content,
+#more_tab:checked~#more_content {
+    display: block;
+}
+
+input {
+    display: none;
+}
+
+/*チェックがついている:input属性の横(下)にある+lebelタグ*/
+label span {
+    background-image: linear-gradient(to top, rgba(12, 150, 182, 0.5) 50%, transparent 50%);
+    /*繰り返さないように*/
+    background-repeat: no-repeat;
+    background-size: 0 auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+input:checked+label span,
+input:hover+label span {
+    background-size: 100% auto;
+}
+
+label::after {
+    content: ' / ';
+}
+
+label:last-of-type::after {
+    content: '';
+}
+
+/*=====================
+タブ切り替え レスポンシブ
+=====================*/
+
+@media screen and (max-width:960px) {
+    .inner label:first-of-type {
+        margin-left: 16px;
+    }
+}
+
+/*===min-width:960px===*/
+
+
+/*=====================
+色
+=====================*/
+.bijoude_color{
+    color: #C9B88D;
+}
+
+.idiy_color {
+    color: #001A53;
+}
+
+h3{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
