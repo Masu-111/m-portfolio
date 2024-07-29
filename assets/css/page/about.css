@@ -35,10 +35,12 @@ main {
     font-weight: 600;
     line-height: 1.8rem;
     margin-bottom: 40px;
+    letter-spacing: 0.1em;
 }
 
 .name_kana {
     font-size: 16px;
+    letter-spacing: 0.1em;
 }
 
 @media screen and (min-width:960px) {
@@ -61,7 +63,7 @@ main {
 Works
 =========*/
 
-.works{
+.works {
     padding-right: 16px;
     padding-left: 16px;
     text-align: center;
@@ -81,7 +83,7 @@ Works
     margin: 0 auto;
 }
 
-.design_cap{
+.design_cap {
     margin-top: 20px;
 }
 
@@ -93,6 +95,7 @@ Works
 
 .cap_title {
     display: inline;
+    letter-spacing: 0.1em;
 }
 
 .works_box figcaption span {
@@ -105,7 +108,7 @@ Works
     margin-bottom: 20px;
 }
 
-.works_text.under_80{
+.works_text.under_80 {
     margin-bottom: 80px;
 }
 
@@ -122,10 +125,11 @@ Works
         font-size: 16px;
     }
 
-    .cord_img_cover{
+    .cord_img_cover {
         margin-bottom: 20px;
     }
 }
+
 /* ===min-width:520px=== */
 
 /*シャッフルテキスト*/
